@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SEGURITECH361 - Cámaras de Seguridad</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #e3f2fd;
+      background-color: #f0f4f8;
     }
     header {
-      background-color: #0d47a1;
+      background-color: #0d1b2a;
       color: white;
       padding: 1rem;
       text-align: center;
@@ -21,7 +22,7 @@
     nav {
       display: flex;
       justify-content: center;
-      background-color: #1565c0;
+      background-color: #1b263b;
     }
     nav a {
       color: white;
@@ -29,7 +30,7 @@
       padding: 1rem;
     }
     nav a:hover {
-      background-color: #1976d2;
+      background-color: #415a77;
     }
     .hero {
       background-image: url('https://images.unsplash.com/photo-1581090700227-1e8e1f52dcf1');
@@ -51,13 +52,13 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     footer {
-      background-color: #0d47a1;
+      background-color: #0d1b2a;
       color: white;
       text-align: center;
       padding: 1rem;
     }
     .contact {
-      background-color: #bbdefb;
+      background-color: #dbe2ef;
       padding: 2rem;
       border-radius: 8px;
       margin-top: 2rem;
@@ -78,8 +79,26 @@
       text-decoration: none;
       font-size: 30px;
     }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      scroll-snap-type: x mandatory;
+      margin: 2rem 0;
+    }
+    .carousel img {
+      height: 250px;
+      border-radius: 10px;
+      scroll-snap-align: start;
+    }
+    .promociones {
+      background-color: #f9f7f3;
+      padding: 2rem;
+      border: 2px dashed #ffb703;
+      margin: 2rem 0;
+      border-radius: 10px;
+    }
   </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -112,6 +131,24 @@
       <h3>Soporte técnico</h3>
       <p>Asistencia remota o en sitio para resolver cualquier problema con tus cámaras.</p>
     </div>
+  </section>
+
+  <section class="content">
+    <h2>Galería de Instalaciones</h2>
+    <div class="carousel">
+      <img src="https://via.placeholder.com/400x250?text=Instalación+1" alt="Instalación 1">
+      <img src="https://via.placeholder.com/400x250?text=Instalación+2" alt="Instalación 2">
+      <img src="https://via.placeholder.com/400x250?text=Instalación+3" alt="Instalación 3">
+    </div>
+  </section>
+
+  <section class="content promociones">
+    <h2>Promociones</h2>
+    <ul>
+      <li><strong>10% de descuento</strong> en tu primera instalación.</li>
+      <li><strong>Mantenimiento gratis</strong> el primer mes.</li>
+      <li><strong>Consulta sin costo</strong> en Chimalhuacán.</li>
+    </ul>
   </section>
 
   <section class="content" id="nosotros">
